@@ -1,0 +1,8 @@
+{
+  "name": "Test Menu",
+  "description": "Show a useless menu in the panel",
+  "uuid": "testmenu@fragoi.github.com",
+  "shell-version": [
+    "3.36"
+  ]
+}
