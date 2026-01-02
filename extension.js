@@ -27,7 +27,7 @@ class Extension {
 }
 
 function buildMenu() {
-  const button = new PanelMenu.Button(0, NAME);
+  const button = new PanelMenu.Button(0.5, NAME);
 
   const label = new St.Label({ text: NAME });
   label.clutter_text.y_align = Clutter.ActorAlign.CENTER;
