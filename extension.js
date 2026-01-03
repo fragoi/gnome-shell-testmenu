@@ -1,18 +1,14 @@
-const { St, Clutter } = imports.gi;
-const {
-  main: Main,
-  panelMenu: PanelMenu,
-  popupMenu: PopupMenu
-} = imports.ui;
+import St from 'gi://St';
+import Clutter from 'gi://Clutter';
+
+import * as Main from 'resource:///org/gnome/shell/ui/main.js';
+import * as PanelMenu from 'resource:///org/gnome/shell/ui/panelMenu.js';
+import * as PopupMenu from 'resource:///org/gnome/shell/ui/popupMenu.js';
 
 const NAME = 'Test Menu';
 const ROLE = 'TestMenu';
 
-function init() {
-  return new Extension();
-}
-
-class Extension {
+export default class Extension {
   enable() {
     this.menu = buildMenu();
     Main.panel.addToStatusArea(ROLE, this.menu);
